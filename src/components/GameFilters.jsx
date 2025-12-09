@@ -1,6 +1,5 @@
 import React from 'react'
 import GameFilter from './GameFilter'
-import { useOutletContext } from 'react-router-dom'
 
 export default function GameFilters({selectedFilter, setSelectedFilter}) {
     return (

@@ -169,7 +169,6 @@ a:hover {
   justify-content: space-around;
   padding-bottom: 0;
   margin-bottom: 0;
-  /* height: 50px; */
 }
 
 .gameGenreItem {
@@ -449,7 +448,6 @@ a:hover {
 .cartItem {
   display: flex;
   gap: 1rem;
-  /* margin-bottom: 1rem; */
   padding: 0.35rem;
   align-items: center;
   border-radius: 0.35rem;
@@ -502,7 +500,6 @@ a:hover {
 
 .deleteCartItemIcon {
   margin-right: 5px;
-  /* align-self: flex-start; */
   width: 20px;
   height: 20px;
   cursor: pointer;
@@ -595,7 +592,6 @@ a:hover {
   max-width: 1200px;
   padding: 1rem;
   padding-top: 2rem;
-  background-color: red;
 }
 
 /* ABOUT US Page */
@@ -799,8 +795,6 @@ a:hover {
   gap: 0.5rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  /* border-bottom: 1px solid rgb(226, 226, 226);
-  border-top: 1px solid rgb(204, 204, 204); */
 }
 
 .orderCardContainer:hover {
@@ -865,6 +859,7 @@ a:hover {
   line-height: 1;
   min-width: 14px;
   text-align: center;
+  background-color: red;
 }
 
 .ordersHeader {
@@ -922,7 +917,6 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  /* flex-wrap: wrap; */
 }
 
 .gameFiltersContainer {
