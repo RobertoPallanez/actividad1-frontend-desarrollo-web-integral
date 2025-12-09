@@ -3,6 +3,7 @@ import HomePage from './components/pages/HomePage'
 import AboutUs from './components/pages/AboutUs'
 import ContactUs from './components/pages/ContactUs'
 import HowToBuy from './components/pages/HowToBuy'
+import MyOrders from './components/pages/MyOrders'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
 
@@ -15,6 +16,7 @@ function App() {
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/contact-us' element={<ContactUs />} />
         <Route path='/how-to-buy' element={<HowToBuy />} />
+        <Route path='/my-orders' element={<MyOrders />} />
       </Route>
     </Routes>
   )

@@ -36,15 +36,19 @@ export default function MainPage() {
     closeCart,
     addItemToCart,
     deleteCartItem,
-    checkoutGames
+    checkoutGames,
+    purchasedGames,
+    setPurchasedGames
   } = useCart(gamesArray);
 
+  const myOrdersCount = purchasedGames.length;
 
   return (
     <div className='pageBody'>
       <div className='pageContainer'>
       <Header
         cartCount={cartCount}
+        myOrdersCount={myOrdersCount}
         toggleCart={toggleCart}
         searchGame={searchGame}
         gameName={gameName}
@@ -66,7 +70,11 @@ export default function MainPage() {
           addItemToCart,
           gamesArray,
           selectedFilter,
-          setSelectedFilter
+          setSelectedFilter,
+
+          // My Orders Page
+          purchasedGames,
+          setPurchasedGames
         }} />
       </main>
       <Footer />

@@ -3,6 +3,7 @@ import NavBar from './NavBar';
 
 export default function Header({
     cartCount,
+    myOrdersCount,
     toggleCart,
     searchGame,
     gameName,
@@ -14,6 +15,7 @@ export default function Header({
         <div className='header'>
             <NavBar
             cartCount={cartCount}
+            myOrdersCount={myOrdersCount}
             toggleCart={toggleCart}
             searchGame={searchGame}
             gameName={gameName}

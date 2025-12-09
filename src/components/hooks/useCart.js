@@ -3,6 +3,7 @@ import { toast } from "react-hot-toast";
 
 export function useCart(gamesArray) {
     const [gamesInCart, setGamesInCart] = useState([]);
+    const [purchasedGames, setPurchasedGames] = useState([]);
     const [isCartOpen, setIsCartOpen] = useState(false);
 
     const cartCount = gamesInCart.reduce((t, g) => t + (g.numOfCopies || 1), 0);
@@ -36,6 +37,7 @@ export function useCart(gamesArray) {
     }
 
     function checkoutGames() {
+        setPurchasedGames(gamesInCart);
         setGamesInCart([]);
         setIsCartOpen(false);
         toast.success("Thank you for your purchase!");
@@ -49,6 +51,8 @@ export function useCart(gamesArray) {
         closeCart,
         addItemToCart,
         deleteCartItem,
-        checkoutGames
+        checkoutGames,
+        purchasedGames,
+        setPurchasedGames,
     };
 }
